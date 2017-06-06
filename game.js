@@ -2,14 +2,14 @@ var Game = function() {
 
     // Game settings
     var settings = {};                     // Containes all game settings
-    settings.ballSpeed = 8;                // The speed of the ball
-    settings.walls = true;                 // The ball can not go outside the screen
-    settings.automatic = false;            // The ball will move by itself
+    settings.playerSpeed = 8;              // The speed of the player
+    settings.walls = true;                 // The player can not go outside the screen
+    settings.automatic = false;            // The player will move by itself
     settings.godmode = false;              // Debug mode
 
     // World settings
     var assets = [];                      // All game objects
-    var player = new Ball(settings);      // The player
+    var player = new Player(settings);    // The player
     assets[0] = player;
     var frame = 0;                        // Frames since the start of the game
 
