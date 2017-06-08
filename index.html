@@ -6,7 +6,7 @@
 
   <style>
 
-    #ball {
+    #player {
       height: 100px;
       width: 100px;
       background-color: red;
@@ -16,17 +16,26 @@
       border-radius: 50%;
     }
 
+    .enemy {
+      height: 25px;
+      width: 25px;
+      background-color: blue;
+      position: absolute;
+      border-radius: 50%;
+    }
+
   </style>
 
 </head>
 
 <body>
 
-  <div id="ball"></div>
+  <div id="player"></div>
 
 
   <script type="text/javascript" src="jquery.min.js"></script>
-  <script type="text/javascript" src="ball.js"></script>
+  <script type="text/javascript" src="player.js"></script>
+  <script type="text/javascript" src="enemy.js"></script>
   <script type="text/javascript" src="game.js"></script>
 </body>
 </html>
